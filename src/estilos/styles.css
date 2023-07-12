@@ -6,6 +6,8 @@
     --verde: #56866A;
     --fuentePcpal: font-family: 'Montserrat', sans-serif;
 }
+
+/** SELECTORES GLOBALES **/
 html {
     font-size: 62.5%;           /* <--- 1rem = 10px */
     box-sizing: border-box;     /* <--- Elimina Box Model */
@@ -21,39 +23,71 @@ body {
     font-family: 'Krub', sans-serif;
     font-weight: 400;
     background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%); /*degradado del fondo */
-}
-header {
-    display: flex;
-    justify-content: space-evenly;
     border-bottom: 0.6rem;
     border-style: solid;
     border-top: none;
     border-left: none;
     border-right: none;
     border-color: var(--verde);
-    
-    
 }
-.navegacion__listado {
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    text-align: center;
-    font-family: var(--fuentePcpal);
-    gap: 6rem;
-    
-}
-.navegacion__listado li{
-    justify-content: space-evenly;
 
+h1 {
+    font-size: 3.8rem;
 }
-.navegacion__listado a{
-    justify-content: space-between;
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    font-family: var(--fuentePcpal);
+    text-align: center;
+}
+
+a {
     text-decoration: none;
+}
+
+/** NAVEGACION **/
+.header {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+@media (min-width: 768px) { /** A PARTIR DE ESTA RESOLUCION APLICA ESTOS CAMBIOS **/
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 4rem;
+    }
+}
+
+.header__contenedor {
+    max-width: 100%;
+}
+
+.header__listado {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {  /** A PARTIR DE ESTA RESOLUCION APLICA ESTOS CAMBIOS **/
+    .header__listado {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+}
+
+.header__listado--referencias {
     color: var(--verde);
 }
-.logo{
-    display: flex;
-    margin-left: 0;
-    align-items: initial;
-}
+
+/** MAIN **/
