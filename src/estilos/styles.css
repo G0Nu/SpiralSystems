@@ -43,16 +43,18 @@ h1,h2,h3 {
     font-family: var(--fuentePcpal);
     text-align: center;
 }
- 
+
 a {
     text-decoration: none;
 }
 
+
 /** NAVEGACION **/
 .header {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center ;
+    justify-content: space-evenly;
     border-bottom: 0.6rem;
     border-style: solid;
     border-top: none;
@@ -60,50 +62,76 @@ a {
     border-right: none;
     border-color: var(--verde);
     padding: 0;
-
+    margin: 0 3rem;
 }
 
-@media (min-width: 800px) { /** A PARTIR DE ESTA RESOLUCION APLICA ESTOS CAMBIOS **/
+@media (min-width: 700px) {
+    .header {
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 7rem;
+    }
+}
+
+@media (min-width: 900px) {
     .header {
         flex-direction: row;
-        justify-content: space-between;
-        margin: 0 8rem;
     }
 }
 
 .header__contenedor {
-    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header__navegacion {
+    padding: 0;
+    margin: 0;
 }
 
 .header__listado {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    padding: 0;
 }
 
-@media (min-width: 800px) {  /** A PARTIR DE ESTA RESOLUCION APLICA ESTOS CAMBIOS **/
+@media (min-width: 700px) {
     .header__listado {
         flex-direction: row;
         justify-content: space-between;
-        gap: 8rem;
+        gap: 1rem;
     }
 }
 
-.header__listado--referencias {
+.header__listado a {
     color: var(--oscuro);
-    padding: 3.8rem 2.5rem;
-    font-size: 1.8rem;
-    font-weight: 40rem;;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 40rem;
 }
-.header__listado--referencias:hover {
+
+.header__listado a:hover {
     background-color: var(--verde);
     color: var(--blanco);
 }
+
+@media (min-width: 700px) {
+    .header__listado a{
+        padding: 1.3rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .header__listado--referencias {
+        padding: 1.7rem;
+    }
+}
+
 .header__logo {
     max-width: 100%;
-    min-width:  170px;
-    width: 170px;
+    min-width: 135px;
+    width: 135px;
     padding: 0;
     margin: 0;
 }
@@ -111,4 +139,5 @@ a {
     padding: 0;
     margin: 0;
 }
+
 /** MAIN **/    
