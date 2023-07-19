@@ -32,6 +32,7 @@ h1 {
 
 h2 {
     font-size: 2.8rem;
+    color: var(--verde);
 }
 
 h3 {
@@ -42,7 +43,7 @@ h1,h2,h3 {
     font-family: var(--fuentePcpal);
     text-align: center;
 }
-
+ 
 a {
     text-decoration: none;
 }
@@ -58,7 +59,7 @@ a {
     border-left: none;
     border-right: none;
     border-color: var(--verde);
-    padding: 2rem;
+    padding: 0;
 
 }
 
@@ -90,7 +91,24 @@ a {
 }
 
 .header__listado--referencias {
-    color: var(--verde);
+    color: var(--oscuro);
+    padding: 3.8rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 40rem;;
 }
-
-/** MAIN **/
+.header__listado--referencias:hover {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+.header__logo {
+    max-width: 100%;
+    min-width:  170px;
+    width: 170px;
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    padding: 0;
+    margin: 0;
+}
+/** MAIN **/    
