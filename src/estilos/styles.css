@@ -2,8 +2,9 @@
     --blanco: #FCFCFB;
     --oscuro: #191919;
     --verde_oscuro: #55625B;
-    --blanco_secundario: #0097A7;
+    --blanco_secundario: #F8FCFA;
     --verde: #56866A;
+    --azul: #00416A;
     --fuentePcpal: font-family: 'Montserrat', sans-serif;
 }
 
@@ -22,32 +23,41 @@ body {
     font-size: 16px;            /* <--- 1rem = 10px */
     font-family: 'Krub', sans-serif;
     font-weight: 400;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%); /*degradado del fondo */
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco_secundario) 100%); /*degradado del fondo */
 
 }
 
 h1 {
-    font-size: 3.8rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     color: var(--verde);
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
 }
 
 h1,h2,h3 {
     font-family: var(--fuentePcpal);
     text-align: center;
+    margin: 0 auto;
 }
 
 a {
     text-decoration: none;
 }
 
+p {
+    font-size: 1.8rem;
+    padding: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+}
 
 /** NAVEGACION **/
 .header {
@@ -107,7 +117,7 @@ a {
 .header__listado a {
     color: var(--oscuro);
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 40rem;
 }
 
@@ -140,4 +150,74 @@ a {
     margin: 0;
 }
 
-/** MAIN **/    
+/**  CARRUSEL **/
+
+
+/** QUIENES SOMOS **/
+
+.seccion__quienes h2{
+    color: var(--azul);
+}
+
+
+
+/** MAIN **/
+
+.main {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor { /** CONTENEDOR GRID **/
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding: 5rem;
+}
+
+@media (min-width: 760px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor {
+        gap: 10rem;
+    }
+}
+
+.servicios {
+    background-color: var(--azul);
+    padding: 1.3rem;
+}
+
+.servicios:hover{
+    opacity: 40%;
+    padding: 0;
+}
+
+.servicios__imagen {
+    width: 100%;
+}
+
+.servicios__titulo {
+    color: var(--blanco);
+}
+
+.servicios__descripcion {
+    color: var(--blanco);
+}
+
+.servicios__titulo, .servicios__descripcion {
+    font-family: var(--fuentePcpal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/** FOOTER **/
+
+.footer {
+
+}
