@@ -155,11 +155,6 @@ img {
     padding: 0;
     margin: 0;
 }
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 0;
-}
 
 @media (max-width: 900px) {
     .logo{
@@ -168,12 +163,12 @@ img {
         border-left: none;
         border-right: none;
         border-color: var(--verde);
-        margin: 0 2rem;
+        padding: 0 5rem;
     }
 }
 
 .logo p {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: var(--oscuro);
     margin: 0;
     padding: 0;
@@ -215,7 +210,7 @@ img {
 .boton {
     background-color: var(--verde);
     color: var(--blanco);
-    padding: 1rem 3rem;
+    padding: 1.2rem 3rem;
     margin-top: 3rem;
     font-size: 2rem;
     text-decoration: none;
@@ -225,6 +220,17 @@ img {
     width: 90%;
     text-align: center;
     border: none;
+}
+
+.cabecera__ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cabecera__ubicacion p {
+    font-size: 1.9rem;
 }
 
 /**  CARRUSEL **/
