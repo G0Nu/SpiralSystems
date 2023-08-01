@@ -1,0 +1,34 @@
+:root {                         /* <--- Declarar variables en CSS */
+    --blanco: #FCFCFB;
+    --oscuro: #333;
+    --verde_oscuro: #609636;
+    --blanco_secundario: #f3f1f1;
+    --verde: #84D347;
+    --azul: #00416A;
+    --azulBajo: #edf9fcbd;
+    --azulOscuro: #01304d;
+    --fuentePcpal: 'Roboto', sans-serif;
+}
+
+/** MAIN **/
+.slogan {
+    background-image: url(/imgs/epoxic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50rem;
+    
+}
+
+.slogan__container {
+    position: absolute;
+    background-color: rgb(0 0 0 / 20%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.slogan__text h1, p {
+    color: var(--blanco);
+}
