@@ -1,13 +1,17 @@
 :root {                         /* <--- Declarar variables en CSS */
-    --blanco: #FCFCFB;
-    --oscuro: #333;
-    --verde_oscuro: #609636;
+    --white: #FCFCFB;
+    --eerieBlack: #191919;
+    --feldgrau: #55625B;
+    --babyPowder: #F8FCFA;
+    --viridian: #56866A;
+
+    /*--verde_oscuro: #609636;
     --blanco_secundario: #f3f1f1;
     --verde: #84D347;
     --azul: #00416A;
     --azulBajo: #edf9fcbd;
-    --azulOscuro: #01304d;
-    --fuentePcpal: 'Roboto', sans-serif;
+    --azulOscuro: #01304d;*/
+    --mainFont: 'Roboto', sans-serif;
 }
 
 /** MAIN **/
@@ -20,14 +24,7 @@
     
 }
 
-.slogan__container {
-    position: absolute;
-    background-color: rgb(0 0 0 / 20%);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+
 
 .slogan__text h1, p {
     color: var(--blanco);
